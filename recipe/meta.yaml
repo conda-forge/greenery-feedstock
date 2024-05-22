@@ -1,5 +1,5 @@
 {% set name = "greenery" %}
-{% set version = "4.2.0" %}
+{% set version = "4.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/greenery-{{ version }}.tar.gz
-  sha256: 0b93c765532b5085dd7da3eee30a397b193c0d57e6cd5dae2d343e63555c0e77
+  sha256: 5a4b46482e903373f4a50b81b942f4bf9a487695f5e1f86ad9644d5b79baa151
 
 build:
   noarch: python
