@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: greenery
-  version: 4.2.2
+  version: "4.2.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/greenery-${{ version }}.tar.gz
-  sha256: 6221d5727d19b4f46fc794635aa00b3dbbab33ed7ff1d686a0011d9197a4b7a0
+  sha256: 546e8d2764949f6999d7cb56a5cbb0dc9be38f34489ce2abb95db622dac7b2cd
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
